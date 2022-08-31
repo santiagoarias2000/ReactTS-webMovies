@@ -1,0 +1,58 @@
+#Crear proyect
+#init a new proyect
+npm i -g npm@8.15.1 ---> install or update to npm version
+npm i -g typescript ---> install or update to ultime version to typescript
+tsc --version ---> see to version to TS
+npm i -g react ---> use to react when don`t have connection internet
+npm view react version ---> view version react to console
+npm i create-react-app ---> !!more importan from use to thes class!!
+npx create-react-app proyecto01_holaMundo --template typescript ---> create proyect
+
+#ahora la trama del icono
+
+#ahora instale las librerias basicas
+npm i bootstrap
+npm i @fortawesome/fontawesome-free
+npm i react-router-dom
+npm i react-bootstrap
+#AHora incluya las librerias en el proyecto asi
+
+#Iniciar aplicacion:
+npm start
+#Cambiar el porto de 3000 a 8088 carpeta package.json
+"start": "set PORT=8088 && react-scripts start",
+
+#Colocar estas lineas de codigo en index.tsx
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
+import "@fortawesome/fontawesome-free/css/all.css";
+
+import React from 'react';
+import logo from './logo.svg';
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.tsx</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+  );
+}
+
+export default App;
+
+#espacio de ingeniero de sistemas
+&nbsp;
