@@ -1,9 +1,9 @@
 import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 import { ARRAY_FILMS } from '../../mocks/films-mock';
 
 export const MyVerticallyCenteredModal =(props: any)=>{
-
 
     const idMovie = Number(props.obj.idFilms);
     console.log(idMovie)
@@ -22,8 +22,13 @@ export const MyVerticallyCenteredModal =(props: any)=>{
           {myMovie?.nameFilms}
         </Modal.Title>
       </Modal.Header>
-      <Modal.Body>
-        <img src={myMovie?.imageFilms} alt="" />
+      <Modal.Body className='d-flex justify-content-center'>
+        <Card style={{ width: '20rem' }}>
+      <img src={myMovie?.imageFilms} alt="" className='center' />
+      <Card.Body>
+
+      </Card.Body>
+    </Card>
 
       </Modal.Body>
       <Modal.Footer>
